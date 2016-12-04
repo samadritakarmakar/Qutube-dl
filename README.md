@@ -34,8 +34,8 @@ HOW TO USE
 copy and paste the video url in the box labelled 'Url'
 
 You may directly press button 'Go!' to download the video to your desired location.
-You may check the available versions by clicking 'Available Versions?' button.
-Look for numbers under 'format code' in the output if you click the 'Available Versions?' button. Enter the desired format code in 'Format code' box and press 'Go!'
+You may check the available versions by clicking 'Available Format?' button.
+Look for numbers under 'format code' in the output if you click the 'Available Format?' button. Enter the desired format code in 'Format code' box and press 'Go!'
 
 Thanks for using Qutube-dl!
 
