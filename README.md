@@ -7,7 +7,9 @@ unpack the file in your preferred location
 type the following:
 
 cd Qutube-dl
+
 qmake Qutube-dl.pro
+
 make
 
 you may also use QtCreator to compile.
@@ -19,7 +21,7 @@ Move the executable (.exe for windows users) file just compiled into the folder.
 
 Windows users add the bin directory of your Qt installation (e.g. <QT_DIR\bin>) to the PATH variable and then run:
 
-  windeployqt <path to Qutube-dl executable> 
+  windeployqt 'path to Qutube-dl executable' 
 
 Create a new folder 'youtube-dl' within 'Qutube-dl' folder
 download the latest version of youtube-dl from https://rg3.github.io/youtube-dl/ and place within 'youtube-dl' folder.
