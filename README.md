@@ -14,7 +14,7 @@ make
 
 you may also use QtCreator to compile.
 
-SETUP
+SETUP AFTER COMPILATION
 
 Create a folder 'Qutube-dl'
 Move the executable (.exe for windows users) file just compiled into the folder.
@@ -36,8 +36,14 @@ HOW TO USE
 copy and paste the video url in the box labelled 'Url'
 
 You may directly press button 'Go!' to download the video to your desired location.
+![alt tag](https://github.com/samadritakarmakar/Qutube-dl/blob/master/Screeshot_download.png)
+
 You may check the available versions by clicking 'Available Format?' button.
-Look for numbers under 'format code' in the output if you click the 'Available Format?' button. Enter the desired format code in 'Format code' box and press 'Go!'
+Look for numbers under 'format code' in the output if you click the 'Available Format?' button.Enter the desired format code in 'Format code' box and press 'Go!'
+
+![alt tag](https://github.com/samadritakarmakar/Qutube-dl/blob/master/Screenshot_format_code_1.png)
+![alt tag](https://github.com/samadritakarmakar/Qutube-dl/blob/master/Screenshot_format_code_2.png)
+![alt tag](https://github.com/samadritakarmakar/Qutube-dl/blob/master/Screenshot_update_backend.png)
 
 Thanks for using Qutube-dl!
 
