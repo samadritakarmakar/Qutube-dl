@@ -27,6 +27,8 @@ private slots:
 
     void on_updt_bcknd_pb_clicked();
 
+    void on_stop_pb_clicked();
+
 private:
     Ui::Qutubedl *ui;
     QProcess *youtube=new QProcess;

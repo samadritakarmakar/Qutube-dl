@@ -136,3 +136,10 @@ void Qutubedl::readoutput()
     ui->output_tb->setText(f_output);
 }
 
+
+void Qutubedl::on_stop_pb_clicked()
+{
+    button_handle();
+    youtube->terminate();
+
+}
