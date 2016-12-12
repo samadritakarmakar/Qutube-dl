@@ -67,6 +67,14 @@ void Qutubedl::on_updt_bcknd_pb_clicked()
     click_handle(argument);
 }
 
+//on clicking stop push button.
+void Qutubedl::on_stop_pb_clicked()
+{
+    button_handle();
+    youtube->terminate();
+
+}
+
 //fetches texts entered
 void Qutubedl::get_texts()
 {
@@ -109,16 +117,22 @@ void Qutubedl::button_handle()
     connect(youtube,SIGNAL(readyReadStandardError()),this, SLOT(readoutput()));
 }
 
-//Disables Go Pushbutton
+//Originally disabled Go Push Button, now disables all Push Buttons
 void Qutubedl::disable_go()
 {
     ui->Go_pb->setEnabled(false);
+    ui->get_fmt_pb->setEnabled(false);
+    ui->updt_bcknd_pb->setEnabled(false);
+    ui->stop_pb->setEnabled(false);
 }
 
- //Enables Go Pushbutton
+//Originally enabled Go Push Button, now Enables all Push Buttons
 void Qutubedl::enable_go()
 {
     ui->Go_pb->setEnabled(true);
+    ui->get_fmt_pb->setEnabled(true);
+    ui->updt_bcknd_pb->setEnabled(true);
+    ui->stop_pb->setEnabled(true);
     f_output.clear();
 }
 
@@ -136,10 +150,3 @@ void Qutubedl::readoutput()
     ui->output_tb->setText(f_output);
 }
 
-
-void Qutubedl::on_stop_pb_clicked()
-{
-    button_handle();
-    youtube->terminate();
-
-}
