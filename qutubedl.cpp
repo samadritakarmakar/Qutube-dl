@@ -117,22 +117,22 @@ void Qutubedl::button_handle()
     connect(youtube,SIGNAL(readyReadStandardError()),this, SLOT(readoutput()));
 }
 
-//Originally disabled Go Push Button, now disables all Push Buttons
+//Originally disabled Go Push Button, now disables all Push Buttons other than Stop PB
 void Qutubedl::disable_go()
 {
     ui->Go_pb->setEnabled(false);
     ui->get_fmt_pb->setEnabled(false);
     ui->updt_bcknd_pb->setEnabled(false);
-    ui->stop_pb->setEnabled(false);
+    //ui->stop_pb->setEnabled(false);
 }
 
-//Originally enabled Go Push Button, now Enables all Push Buttons
+//Originally enabled Go Push Button, now Enables all Push Buttons other than Stop PB
 void Qutubedl::enable_go()
 {
     ui->Go_pb->setEnabled(true);
     ui->get_fmt_pb->setEnabled(true);
     ui->updt_bcknd_pb->setEnabled(true);
-    ui->stop_pb->setEnabled(true);
+    //ui->stop_pb->setEnabled(true);
     f_output.clear();
 }
 
