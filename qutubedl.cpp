@@ -36,7 +36,7 @@ void Qutubedl::on_Go_pb_clicked()
     QDir open;
     youtube_d_handle();
 
-    QFileDialog *d_path = new QFileDialog;
+    QFileDialog *d_path = new QFileDialog(this);
     QString d_path_string=d_path->getExistingDirectory(this,"Save Directory", QDir::homePath());
     qDebug()<<d_path_string;
     open.setCurrent(d_path_string);
@@ -78,7 +78,8 @@ void Qutubedl::on_stop_pb_clicked()
 //fetches texts entered
 void Qutubedl::get_texts()
 {
-    Url=ui->url->text();
+    //Url=ui->url->text();
+    Url=ui->url->toPlainText();
     proxy=ui->prxy->text();
     fmt=ui->frmt->text();
 }

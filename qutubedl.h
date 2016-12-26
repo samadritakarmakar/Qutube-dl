@@ -31,7 +31,7 @@ private slots:
 
 private:
     Ui::Qutubedl *ui;
-    QProcess *youtube=new QProcess;
+    QProcess *youtube=new QProcess(this);
     QString f_output;
     QString f_cb;
     int i=0,z=0;
