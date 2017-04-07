@@ -27,7 +27,7 @@ void Qutubedl::on_Go_pb_clicked()
     if (proxy!="")
         argument<<"--proxy"<<proxy;
     if (fmt!="")
-        argument<<"-tf"<<fmt;
+        argument<<"-f"<<fmt;
     argument<<Url;
     qDebug()<<argument;
 
