@@ -71,7 +71,8 @@ void Qutubedl::on_updt_bcknd_pb_clicked()
 void Qutubedl::on_stop_pb_clicked()
 {
     button_handle();
-    youtube->terminate();
+    //youtube->terminate();
+    youtube->kill();
 
 }
 
